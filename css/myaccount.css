@@ -1,0 +1,107 @@
+/* General styling */
+
+.ss-wrapper p,
+.ss-wrapper a,
+.ss-wrapper label {
+	font-family: 'Raleway', sans-serif;
+	color: #343434;
+	font-size: 16px;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+.ss-wrapper a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.ss-wrapper a:hover {
+	color: #6b6b6b;
+}
+
+.ss-links a:last-child {
+    padding-bottom: 80px;
+}
+
+.ss-wrapper input[type="text"],
+.ss-wrapper input[type="password"] {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+}
+
+.ss-button {
+	background-color: #E84A5F;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	margin: 0 auto;
+}
+
+.ss-button:hover {
+	background-color: #d63147
+}
+
+/* Layout */
+
+.ss-wrapper {
+	margin: 0 auto;
+	max-width: 300px;
+	line-height: 140%;
+}
+
+.ss-links {
+	margin: 0 auto;
+	width: 186px;
+	line-height: 32px;
+}
+
+.ss-wrapper img {
+	margin: 0 auto;
+	padding: 80px 0px 40px 0px;
+	width: 140px;
+	height: 117px;
+	display: block;
+}
+
+form .ss-input input {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	padding-left: 3px;
+}
+
+form .ss-input label {
+	display: block;
+	width: 188px;
+	margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+   	font-family: 'Raleway', sans-serif;
+	color: #343434;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   	font-family: 'Raleway', sans-serif;
+	color: #343434;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   	font-family: 'Raleway', sans-serif;
+	color: #343434;  
+}
+
+:-ms-input-placeholder {  
+   	font-family: 'Raleway', sans-serif;
+	color: #343434;  
+}

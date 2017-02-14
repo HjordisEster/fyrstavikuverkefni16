@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Unicorn</title>
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style-nav.css">
+          <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/payprogress.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+      <header id="haus">
+        <a href="index.html" id="logo">
+          <div class="header">
+          <img src="img/logo-mtexta-transparent (1).png" alt="logo" />
+          </div>
+
+      </a>
+      <nav>
+        <ul class="dropD">
+          <li class="dropdown categories">
+          <a href="#" class="dropbtn">
+          Categories<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+
+			    <div class="dropdown-content">
+				    <a href="#">Unicorns</a>
+			    	<a href="#">Entertainment</a>
+				    <a href="#">Plushies</a>
+            <a href="#">Electronics</a>
+            <a href="#">Food & Drinks</a>
+			    </div></li>
+             <li class="myaccount"><a href="myaccount.html">My account</li></a>
+               <li class="search">
+              <a href="#" id="searchid" onclick="searchclick()", onclick="search()">Search</a>
+              <input id="searchfieldid" class=searchfield type="text" name="name" value="" autocomplete="off"> 
+              <div class="dropdown-content searchresults">
+
+              </div>
+            
+            </li>
+             <li  class="basket">
+             <a href="Basket.html" onclick="basketclick(true)" id="aBasket">Basket<img src="img/basket1.svg" alt="" /></a>
+             </li>
+            </ul>
+        </nav>
+
+      </header>
+
+
+<div id="wrapper">
+
+      <section class="form">
+
+<div class="form1">
+
+<img src="img/timalina.svg" alt="" />
+
+<h2 class="ship">Shipment</h2>
+
+<h3 class="delivery"> Where would u like this deliverd?</h3>
+
+ <form onsubmit="form1(true)" method="post">
+
+   <input type="text" id="lnamefirst" name="shippingname" placeholder="First Name">
+
+   <label for="lname"></label>
+
+   <input type="text" id="lnamelast" name="lastname" placeholder="Last Name">
+
+   <label for="lname"></label>
+
+   <input type="text" id="lname" name="shipemail" placeholder="Email">
+
+   <input type="text" id="lnameA" name="shipadress" placeholder="Adress">
+
+   <input type="text" id="lnameA2" name="shipapt" placeholder="#apt">
+
+   <input type="text" id="lnameTC" name="shippingcity" placeholder="City/Town">
+
+   <input type="text" id="lnameP" name="shippostcode" placeholder="Post Code">
+
+   <select id="country" name="country" placeholder= "Country">
+
+     <option value="" disabled selected> Select your country</option>
+
+     <option value="australia">Australia</option>
+
+     <option value="canada">Canada</option>
+
+     <option value="usa">USA</option>
+
+   </select>
+
+ <div class="takki">
+
+   <ul>
+
+     <li><button onclick="form1(true)" class="button" type="button">NEXT</button></li>
+
+   </ul>
+
+ </div>
+
+</div>
+
+</form>
+
+<div class="form2">
+
+<form>
+
+ <img src="img/timalina2.svg" alt="" />
+
+ <h2 class="ship">Billing info</h2>
+
+<div class="paypal">
+
+  <ul class="payment">
+
+    <li><a href="#"><img class="takkicard" src="img/cradcred.svg" alt="" /></a></li>
+
+    <li><a href="http://www.paypal.com"><img class="takkipal" src="img/paypallogo.png"   alt="" /></a></li>
+
+  </ul>
+
+</div>
+
+<h4>Total Price: 99$</h4>
+
+<p class="billing">Billing Adress: <span class="bil">------------------------------------------------</span>Credit Card Info:</p>
+
+<input class="checkbox" type="checkbox" name="billingtoo" onclick="FillBilling(this.form)" value=""><em>Check this box if Billing Address and Mailing Address are the same.</em>
+
+   <input type="text" id="fullname" name="billingname" placeholder="Full Name">
+
+    <input type="text" id="nameonc" name="nameonCard" placeholder="Name on Card">
+
+   <input type="text" id="Adress1" name="billadress1" placeholder="Adress">
+
+   <input type="text" id="apt" name="billapt" placeholder="apt">
+
+   <input type="text" id="cardnr" name="cardnumber" placeholder="&#xf09d; Card Number">
+
+   <input type="text" id="City" name="billingcity" placeholder="City/Town">
+
+   <input type="text" id="Postcode" name="postcode" placeholder="Post Code">
+
+   <input type="text" id="MM" name="Month" placeholder="&#xf133; MM/YY">
+
+   <input type='text' id="Cvc" placeholder='&#xf023; CVC'></input>
+
+   <input type="text" id="country2" name="billcountry" placeholder="Country">
+
+   <div class="takki">
+
+     <ul>
+
+       <button onclick="formback1(true)" id="button2" type="button">BACK</button>
+
+       <button onclick="form2(true)" class="button" type="button">NEXT</button>
+
+     </ul>
+
+   </div>
+
+ </form>
+
+</div>
+
+<div class="form3">
+
+ <form>
+
+<img src="img/timalina1.svg" alt="" />
+
+<h2 class="ship">Confirm your order</h2>
+
+<div class="box">
+
+     <img src="img/bill.svg" alt="" />
+
+<h1>Total Price: 99$</h1>
+
+</div>
+
+   <div class="takki">
+
+     <ul>
+
+    <button onclick="formback2(true)" id="button2" type="button">BACK</button>
+
+    <a href="congrats.html"><button onclick="form3(true)" class="button" type="button">Confirm</button></a>
+
+  </ul>
+
+   </div>
+
+    
+
+ </form>
+
+</div>
+
+<div class="form4">
+
+  <img src="img/present.png" alt="" />
+
+</div>
+
+</section>
+ <div class="ss-content">
+    <footer class=ss-footer>
+      <img class="ss-logofooter" src="img/logogratt3.png" alt="">
+      <a href="http://twitter.com"><img src="img/Twitter_logo.png" alt="twitter" class="social-icon" id="twitter"></a>
+      <a href="http://facebook.com"><img src="img/Facebook_logo.png" alt="facebook" class="social-icon" id="facebook"></a>
+
+      <address>
+        <a href="mailto:Unicorn@gmail.com">Unicorn@gmail.com</a><br>
+        <p>Our phone number:</p><a href="tel:202-555-0125" title="Our telephone number">202-555-0125</a>
+      </address>
+    </footer>
+  </div> <!-- End ss-content -->
+
+    <script type="text/javascript" src="js/script.js"> </script>
+      <script src="js/products.js"></script>
+      <script src="js/scriptnav.js"></script>
+      <script src="js/modal.js"></script>
+      <script src="js/getproducts.js"></script>
+      <script src="js/leit.js"></script>
+  </body>
+
+ 
+
+  </html>
+

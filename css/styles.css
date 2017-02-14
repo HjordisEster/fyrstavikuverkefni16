@@ -1,0 +1,73 @@
+.ss-logofooter {
+	float: left;
+	max-width: 100px;
+	padding-top: 25px;
+	padding-left: 97px;
+	height: 50px;
+}
+
+.ss-footer {
+	height: 103px;
+	background-color: #2a363b;
+	width: 100%;
+}
+
+.ss-footer address {
+	text-align: center;
+}
+
+.ss-footer p {
+	text-align: center;
+	padding-top: 16px;
+	font-family: 'Raleway', sans-serif;
+	color: #ccc;
+	display: inline-block;
+}
+
+.ss-footer address a {
+	font-family: 'Raleway', sans-serif;
+	color: #ccc;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 20px;
+}
+
+.ss-footer address a:first-child {
+	padding-top: 20px;
+}
+
+.ss-footer address a:last-child {
+	padding-left: 10px;
+}
+
+.ss-footer address a:hover {
+	color: #e6e6e6;
+}
+
+.social-icon {
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+	float: right;
+	padding-top: 30px;
+}
+
+#twitter {
+	padding-left: 10px;
+	padding-right: 54px;
+}
+
+
+/* Sticky footer */
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+
+  flex-direction: column;
+}
+.ss-content {
+  flex: 1;
+}

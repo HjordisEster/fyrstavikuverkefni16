@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<title>Unicorn</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style-nav.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/payprogress.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/scriptnav.js"></script>
+</head>
+<body>
+
+<!-- Nav -->
+
+<header id="haus">
+
+       <a href="index.html" id="logo">
+
+         <div class="header">
+
+         <img src="img/logo-mtexta-transparent (1).png" alt="logo" />
+
+         </div>      </a>
+
+     <nav>
+
+       <ul class="dropD">
+
+         <li class="dropdown categories">
+
+         <a href="#" class="dropbtn">
+
+         Categories<i class="fa fa-chevron-down" aria-hidden="true"></i></a>                <div class="dropdown-content">
+
+                    <a href="unicorns.html">Unicorns</a>
+
+                    <a href="entertainment.html">Entertainment</a>
+
+                    <a href="plushies.html">Plushies</a>
+
+           <a href="electronics.html">Electronics</a>
+
+           <a href="foodndrink.html">Food & Drinks</a>
+
+                </div></li>
+
+            <li class="myaccount"><a href="myaccount.html">My account</li></a>
+
+           
+            <li class="search">
+              <a href="#" id="searchid" onclick="searchclick()", onclick="search()">Search</a>
+              <input id="searchfieldid" class=searchfield type="text" name="name" value="" autocomplete="off"> 
+              <div class="dropdown-content searchresults">
+
+              </div>
+            
+            </li>
+
+            <li  class="basket">
+
+            <a href="Basket.html" onclick="basketclick(true)" id="aBasket">Basket<img src="img/basket1.svg" alt="" /></a>
+
+            </li>
+
+           </ul>
+
+       </nav>
+</header> 
+
+<!-- End nav -->
+
+<body>
+	<div class="ss-wrapper2">
+		<h2>Your basket</h2>
+		<div class="ss-product">
+			<table>
+				<tbody>
+					<tr>
+						<td><img id="ss-nesbluetoothspeaker" src="images/nesbluetoothspeaker.png" alt=""/></td>
+						<td><a href="#"><img class="ss-x" src="images/x.png" alt="remove item"/></a>
+							<h3>NES Bluetooth Speaker</h3>
+							<p>£34.99</p></br>
+ 							<select class="amount" name="amountselector" placeholder="Amount">
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6">6</option>
+							    <option value="7">7</option>
+							    <option value="8">8</option>
+							    <option value="9">9</option>
+							    <option value="10">10</option>
+  							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div> <!-- End ss-product -->
+
+		<hr>
+
+		<div class="ss-total">
+			<p>£34.99</p>
+			<h3>Total</h3>			
+		</div> <!-- End total -->
+
+		<a href="paymentprogress.html" class="ss-button">Checkout</a>
+
+	</div> <!-- End ss-wrapper2 -->
+
+<!-- Footer -->
+
+<div class="ss-content">
+		<footer class=ss-footer>
+			<img class="ss-logofooter" src="img/logogratt3.png" alt="">
+			<a href="http://twitter.com"><img src="img/Twitter_logo.png" alt="twitter" class="social-icon" id="twitter"></a>
+			<a href="http://facebook.com"><img src="img/Facebook_logo.png" alt="facebook" class="social-icon" id="facebook"></a>
+
+			<address>
+				<a href="mailto:Unicorn@gmail.com">Unicorn@gmail.com</a><br>
+				<p>Our phone number:</p><a href="tel:202-555-0125" title="Our telephone number">202-555-0125</a>
+			</address>
+		</footer>
+	</div> <!-- End ss-content -->
+
+<!-- End footer -->
+	<script src="js/products.js"></script>
+			<script src="js/scriptnav.js"></script>
+			<script src="js/modal.js"></script>
+			<script src="js/getproducts.js"></script>
+			<script src="js/leit.js"></script>
+
+</body>
+</html>

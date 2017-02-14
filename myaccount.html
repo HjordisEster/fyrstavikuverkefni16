@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/myaccount.css">
+	<link rel="stylesheet" type="text/css" href="css/style-nav.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<!-- Nav -->
+
+<header id="haus">
+
+       <a href="index.html" id="logo">
+
+         <div class="header">
+
+         <img src="img/logo-mtexta-transparent (1).png" alt="logo" />
+
+         </div>      </a>
+
+     <nav>
+
+       <ul class="dropD">
+
+         <li class="dropdown categories">
+
+         <a href="#" class="dropbtn">
+
+         Categories<i class="fa fa-chevron-down" aria-hidden="true"></i></a>                <div class="dropdown-content">
+
+                    <a href="unicorns.html">Unicorns</a>
+
+                    <a href="entertainment.html">Entertainment</a>
+
+                    <a href="plushies.html">Plushies</a>
+
+           <a href="electronics.html">Electronics</a>
+
+           <a href="foodndrink.html">Food & Drinks</a>
+
+                </div></li>
+
+            <li class="myaccount"><a href="myaccount.html">My account</li></a>
+
+              <li class="search">
+              <a href="#" id="searchid" onclick="searchclick()", onclick="search()">Search</a>
+              <input id="searchfieldid" class=searchfield type="text" name="name" value="" autocomplete="off"> 
+              <div class="dropdown-content searchresults">
+
+              </div>
+            
+            </li>
+            <li  class="basket">
+
+            <a href="Basket.html" onclick="basketclick(true)" id="aBasket">Basket<img src="img/basket1.svg" alt="" /></a>
+
+            </li>
+
+           </ul>
+
+       </nav>
+</header> 
+
+<!-- End nav -->
+
+	<div class="ss-wrapper">
+		<img src="images/avatar.png" alt="">
+		<form action="">
+			<div class="ss-input">
+			<label for="Email">Email</label>
+			<input type="text" name="Email" placeholder="johndoe@gmail.com"><br>
+
+			<label for="Password">Password</label>
+			<input type="password" name="Password" placeholder="*********"><br><br>
+			</div>
+
+			<a href="index.html"><input class="ss-button" type="button" value="Login"></a><br>
+		</form>
+			<div class="ss-links">
+				<a href="register.html">Register a new account</a>
+				<a href="linktopage">Forgot your password?</a>
+			</div> <!-- End ss-links -->
+		</form>
+	</div> <!-- End ss-wrapper -->
+
+<!-- Footer -->
+
+
+	<div class="ss-content">
+		<footer class=ss-footer>
+			<img class="ss-logofooter" src="img/logogratt3.png" alt="">
+			<a href="http://twitter.com"><img src="img/Twitter_logo.png" alt="twitter" class="social-icon" id="twitter"></a>
+			<a href="http://facebook.com"><img src="img/Facebook_logo.png" alt="facebook" class="social-icon" id="facebook"></a>
+
+			<address>
+				<a href="mailto:Unicorn@gmail.com">Unicorn@gmail.com</a><br>
+				<p>Our phone number:</p><a href="tel:202-555-0125" title="Our telephone number">202-555-0125</a>
+			</address>
+		</footer>
+	</div> <!-- End ss-content -->
+
+<!-- End footer -->
+
+<script type="text/javascript" src="js/scriptnav.js"></script>
+	<script src="js/products.js"></script>
+			<script src="js/scriptnav.js"></script>
+			<script src="js/modal.js"></script>
+			<script src="js/getproducts.js"></script>
+			<script src="js/leit.js"></script>
+</body>
+</html>

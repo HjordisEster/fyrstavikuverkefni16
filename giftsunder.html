@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unicorn Novelty Shop</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style-nav.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	</head>
+
+	<body>
+
+<!--NAVBAR-->
+		
+		<header id="haus">
+		<a href="index.html" id="logo">
+			<div class="header">
+				<img src="images/logo-mtexta-transparent (1).png" alt="logo" />
+			</div>
+		</a>
+
+    <nav>
+			<ul class="dropD">
+				<li class="dropdown categories">
+					<a href="#" class="dropbtn">Categories
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="unicorns.html">Unicorns</a>
+						<a href="entertainment.html">Entertainment</a>
+						<a href="plushies.html">Plushies</a>
+						<a href="electronics.html">Electronics</a>
+						<a href="foodndrink.html">Food & Drinks</a>
+					</div>
+				</li>
+					<li class="myaccount">
+						<a href="myaccount.html">My account</a>
+					</li>
+					<li class="search">
+						<a href="#" id="searchid" onclick="searchclick()">Search</a>
+						<input id="searchfieldid" class=searchfield type="text" name="name" value="">
+					</li>
+					<li class="basket">
+						<a href="Basket.html" onclick="basketclick(true)" id="aBasket">Basket
+							<img src="images/basket1.svg" alt="Basket" >
+						</a>
+					</li>
+				</ul>
+      </nav>      
+		</header> 
+	
+		
+<!--PRODUCT GRID-->
+		<main id="ir-productgrid">
+			<div id="ir-grid">
+			<div id="ir-grider">	
+				<div id="ir-adbanner">
+					<img src="images/howtoswear-banner.jpg" alt="Banner Ad - A book about how to swear around the world" onclick="productClicked(9)">
+				</div>
+					
+				<div class="ir-titlegifts">
+					<h1>Gifts under £20</h1>
+				</div>
+				
+				<div class="ir-col-25">
+					<div id="ir-vara2">
+						<img src="images/vara8-fknstrongcoffee-mynd2.jpg" alt="Fucking strong coffee" onclick="productClicked(2)">
+							<div class="ir-block">
+								<div class="ir-block-holder">
+									<h2>F*cking Strong Coffee</h2>
+									<h2>£9.95</h2>
+								</div>
+							</div>
+						</div> 
+					</div>
+				
+				<div class="ir-col-25">
+					<div id="ir-vara3">
+						<img src="images/vara10-unicornmask-mynd1.jpg" alt="Unicorn mask" onclick="productClicked(3)">
+							<div class="ir-block">
+								<div class="ir-block-holder">
+									<h2>Unicorn Mask</h2>
+									<h2>£17.95</h2>
+								</div>
+							</div>
+					</div>
+				</div>
+			
+				<div class="ir-col-25">
+					<div id="ir-vara4">
+						<img src="images/vara5-ranbowragegame-mynd1.jpg" alt ="Rainbow Rage card game" onclick="productClicked(4)">
+							<div class="ir-block">
+								<div class="ir-block-holder">
+									<h2>Rainbow Rage</h2>
+									<h2>£15</h2>
+								</div>
+							</div>
+					</div>
+				</div>
+				
+				<div class="ir-col-25">	
+					<div id="ir-vara5">
+						<img src="images/pusheen-01.jpg" alt="Pusheen emoticon pillow" onclick="productClicked(5)">
+							<div class="ir-block">
+								<div class="ir-block-holder">
+									<h2>Pusheen Pillow</h2>
+									<h2>£19.95</h2>
+								</div>
+							</div>
+					</div>
+				</div>
+			
+				<div class="ir-col-25">
+					<div id="ir-vara7">
+						<img src="images/vara6-untbolli-mynd1.jpg" alt="Cup with the word UNT on it" onclick="productClicked(7)">
+							<div class="ir-block">
+								<div class="ir-block-holder">
+									<h2>UNT Cup</h2>
+									<h2>£9.99</h2>
+								</div>
+							</div>
+					</div>
+				</div>
+		
+				<div class="ir-col-25">
+					<div id="ir-vara9">
+						<img src="images/vara9-howtoswear-mynd1.jpg" alt="A book about how to swear around the world" onclick="productClicked(9)">
+							<div class="ir-block">
+								<div class="ir-block-holder">
+									<h2>How To Swear</h2>
+									<h2>£14.95</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+				<div class="ss-content">
+		<footer class=ss-footer>
+			<img class="ss-logofooter" src="img/logogratt3.png" alt="">
+			<a href="http://twitter.com"><img src="img/Twitter_logo.png" alt="twitter" class="social-icon" id="twitter"></a>
+			<a href="http://facebook.com"><img src="img/Facebook_logo.png" alt="facebook" class="social-icon" id="facebook"></a>
+
+			<address>
+				<a href="mailto:Unicorn@gmail.com">Unicorn@gmail.com</a><br>
+				<p>Our phone number:</p><a href="tel:202-555-0125" title="Our telephone number">202-555-0125</a>
+			</address>
+		</footer>
+	</div>
+		</div>
+		</main>
+		<script src="js/products.js"></script>
+			<script src="js/scriptnav.js"></script>
+			<script src="js/modal.js"></script>
+			<script src="js/getproducts.js"></script>
+			<script src="js/leit.js"></script>
+	</body>
+</html>
